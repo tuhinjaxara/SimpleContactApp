@@ -1,0 +1,11 @@
+﻿<div class="row">
+    <div class="col-lg-12">
+        <div style="font-weight: bold;">
+            <a ng-click="editContact(contact.Id)" style="cursor: pointer">{{contact.Name}}</a>
+            <span class="pull-right" title="Delete contact">
+                <i ng-click="deleteContact($event, contact.Id)" class="glyphicon glyphicon-trash"></i>
+            </span>
+        </div>
+        <div>{{contact.Address}} {{contact.ZipCode}}</div>
+    </div>
+</div>

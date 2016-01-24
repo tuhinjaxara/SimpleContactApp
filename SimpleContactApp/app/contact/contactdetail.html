@@ -1,0 +1,47 @@
+﻿
+<div class="form-horizontal">
+    <fieldset>
+        <legend>Contact Detail</legend>
+        <div class="col-lg-8">
+            <div class="form-group">
+                <div class="col-lg-1">                    
+                    <button ng-click="editContact()"
+                            ng-hide="currentContact == null"
+                            class="btn btn-primary">
+                        Edit
+                    </button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-3 control-label">Name</label>
+                <div class="col-lg-8">
+                    <input type="text" class="form-control" ng-model="currentContact.Name" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-3 control-label">Address</label>
+                <div class="col-lg-8">
+                    <input type="text" class="form-control" ng-model="currentContact.Address" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-3 control-label">City</label>
+                <div class="col-lg-8">
+                    <input type="text" class="form-control" ng-model="currentContact.City" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-3 control-label">Zip Code</label>
+                <div class="col-lg-8">
+                    <input type="text" class="form-control" ng-model="currentContact.ZipCode" disabled>
+                </div>
+            </div>          
+        </div>
+
+    </fieldset>
+</div>
+
+<div ui-view></div>
+
+
+
